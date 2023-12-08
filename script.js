@@ -63,8 +63,9 @@
     const title = titleInput.value.trim() || "screenshot";
 
     // Convertendo a imagem para base64 e exibindo
-    const imgDataUrl = canvas.toDataURL("image/jpeg");
-
+   
+    img.src = canvas.toDataURL("image/jpeg");
+    
     // Criando um botão para baixar e compartilhar imagem
   const downloadButton = document.createElement("button");
   downloadButton.classList.add("button", "is-success");
