@@ -73,15 +73,15 @@
   downloadButton.onclick = function () {
     // Criando um link de dowload
     const a = document.createElement("a");
-    a.href = imgDataUrl;
+    a.href = img.src;
     a.download = `${title}.jpg`;
     a.click();
   };
    // Adicionando a imagem e o botão de dowload/compartilhamento à página
   screenshotsContainer.innerHTML = "";
+   screenshotsContainer.appendChild(img);
   screenshotsContainer.appendChild(downloadButton);
-  screenshotsContainer.prepend(img);
-});
+  });
 
   // switch camera
   btnChangeCamera.addEventListener("click", function () {
