@@ -78,8 +78,8 @@
   };
    // Adicionando a imagem e o botão de dowload/compartilhamento à página
   screenshotsContainer.innerHTML = "";
-  screenshotsContainer.appendChild(img);
   screenshotsContainer.appendChild(downloadButton);
+  screenshotsContainer.prepend(img);
 });
 
   // switch camera
